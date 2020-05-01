@@ -1,2 +1,2 @@
-# nidhidavawala.github.io
+# nidhi729.github.io
 Personal Website
