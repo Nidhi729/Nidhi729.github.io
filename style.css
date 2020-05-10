@@ -6,10 +6,18 @@ Released for free under a Creative Commons Attribution 2.5 License
 */
 
 @font-face{
-	font-family: 'Product Sans';
+	font-family: 'Times New Roman';
 	src: url('product-sans/ProductSansRegular.ttf') format('truetype');
 }
 
+ul li::before {
+	content: "\2022";
+	color:black;
+	font-weight: bold;
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em;
+  }
 /*.container-fluid {
     position: absolute;
     top: 50%;
@@ -20,7 +28,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 */
 
 
-h1, h2, h3 {
+h1, h2, h3,h6 {
 	margin: 0;
 	padding: 5px 0px 5px 0px;
 	font-weight: normal;
@@ -30,6 +38,9 @@ h1, h2, h3 {
 h1 {
 	font-size: 4em;
 	/*font-family: Product Sans */
+}
+h6 {
+	font-family:'Product Sans'
 }
 
  #special1 {
@@ -140,7 +151,8 @@ a {
 	/*color: #1f4a91;*/
 	/*color: #0375B4;*/
 	/*green color:#007849;*/
-	 color: #07889B; 
+	 /*color: #07889B;*/ 
+	 color:rgb(5, 104, 119)
 }
 
 a:hover {
