@@ -9,7 +9,6 @@ Released for free under a Creative Commons Attribution 2.5 License
 	font-family: 'Times New Roman';
 	src: url('product-sans/ProductSansRegular.ttf') format('truetype');
 }
-/*
 ul li::before {
 	content: "\2022";
 	color:black;
@@ -17,7 +16,7 @@ ul li::before {
 	display: inline-block; 
 	width: 1em;
 	margin-left: -1em;
-  } */
+  }
 /*.container-fluid {
     position: absolute;
     top: 50%;
@@ -26,8 +25,6 @@ ul li::before {
     transform: translateY(-50%);
 }
 */
-
-
 h1, h2, h3,h6 {
 	margin: 0;
 	padding: 2px 0px 2px 0px;
@@ -122,7 +119,7 @@ div#pdflinks a{
 	max-width: 300px;
 }*/
 img.social{
-	width: 15%;
+	width: 100%;
 	max-width: 30px;
 	/*position: relative;*/
 }
