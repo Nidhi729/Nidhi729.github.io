@@ -9,14 +9,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 	font-family: 'Times New Roman';
 	src: url('product-sans/ProductSansRegular.ttf') format('truetype');
 }
-ul li::before {
-	content: "\2022";
-	color:black;
-	font-weight: bold;
-	display: inline-block; 
-	width: 1em;
-	margin-left: -1em;
-  }
+
 /*.container-fluid {
     position: absolute;
     top: 50%;
