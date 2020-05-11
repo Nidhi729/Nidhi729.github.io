@@ -30,7 +30,7 @@ ul li::before {
 
 h1, h2, h3,h6 {
 	margin: 0;
-	padding: 5px 0px 5px 0px;
+	padding: 3px 0px 3px 0px;
 	font-weight: normal;
 	/*color: #1f4a91;*/
 }
@@ -129,7 +129,7 @@ div#pdflinks a{
 }*/
 img.social{
 	width: 15%;
-	max-width: 50px;
+	max-width: 35px;
 	/*position: relative;*/
 }
 
