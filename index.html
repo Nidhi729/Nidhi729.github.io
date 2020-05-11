@@ -6,13 +6,14 @@
 	<meta name="google-site-verification" content="3MieAZdiLHyU4Xef5FSSRB283ES0TkXyL4SR-LdFYQI" />
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Nidhi Davawala </title>
 	<!-- <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'> -->
 	<link rel='shortcut icon' href='assets/logos/n.png'>
 	<link rel="stylesheet" href="bootstrap.min.css">
 	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+
 
 </head>
 
@@ -53,23 +54,22 @@
 					<span style="color:rgb(5, 104, 119)";>Space Applications Center, Indian Space Research Organization</span>
 				</h5>
 				<h6>
-				<details>
-					<summary style="color:#555353"><span style="color:black";> SAR Image Classification </span></summary>
-					
+
+					<button class="accordion">SAR Image Classification</button>
+					<div class="panel">		
 					<ul>
-						<li> Carried out supervised image classification on agricultural lands using RADARSAT-2 Synthetic Aperture Radar(SAR) Data</li>
+						<li> Conducted supervised image classification on agricultural land using RADARSAT-2 Synthetic Aperture Radar(SAR) Data</li>
 						<li> Implemented Wishart Classification for classifying an image into varied crops, water bodies and populated regions </li>
 					</ul>
+					</div>
 					
-				</details>
-
-				<details>
-					<summary style="color:#555353"><span style="color:black";> Change Detection </span></summary>
+					<button class="accordion">Change Detection</button>
+					<div class="panel">	
 					<ul>
 						<li> Generated change map using hypothesis testing to identify the areas with significant changes over a period of time</li>
 						<li> Conducted analysis of changing trends in crop lifecycles; useful to farmers for crop-yield prediction</li>
 					</ul>
-				</details>
+
 		</h6>
 		   		<hr>
 				<h3 class="heading">Publications</h3>
@@ -78,13 +78,71 @@
 				</h5>
 				
 				<hr>
-				<!-- 
-				<a href="assets/cv.pdf" target="_blank">
-					<h3 class="heading">CV</h3>
-				</a>
-				<hr>
-				-->
+
 				<h3 class="heading">Projects</h3>
+				<button class="accordion">Mini Search Engine Implementation</button>
+				<div class="panel">
+					<h6>
+						<ul>
+							<li>Implemented a mini-search engine capable of handling HTTP query requests to retrieve webpages from keywords. </li>
+							<li> Used Hadoop File Systems to store the files and corresponding URLs; Apache Spark for generating inverted index. </li>
+							<li> Answered queries by retrieving the corresponding files stored as key-value pairs on RocksDB.</li>
+							<li> <a href="https://github.com/ds-umass/mini-google-group-10" target="_blank"> Link to Github repository</a></li>
+						</ul>
+					</h6>
+				</div>
+
+				<button class="accordion">Data Visualization: Mental Health in Tech</button>
+				<div class="panel">
+				<h6>
+					<ul>
+						<li>Developed an<a href="https://nidhi729.github.io/DataVis-Mental-Health/" target="_blank"> <b>interactive website</b></a> using Boostrap for multi-view D3 visualizations of OSMI Mental Health in Tech surveys</li>
+						<li>Performed data analysis on surveys for 3 years to understand the changing trends of mental health of employees in IT industry.</li>
+						<li>Gained insights on the cause and spread of mental disorders, evaluated the support system and made suggestions to improve it.</li>
+						<li> <a href="https://nidhi729.github.io/DataVis-Mental-Health/" target="_blank">Link to demo </a></li>
+					</ul>
+				</h6>
+			</div>
+
+			<button class="accordion">Intracranial Hemorrhage Detection</button>
+				<div class="panel"> 
+					<h6>
+						<ul> 			
+							<li> Used deep learning models to predict the presence and sub-type of hemorrhage from medical cranial images</li>
+							<li> Trained a Convolutional Neural Networks model (CNN) with a prediction accuracy of 91.3%.</li>
+							<li> Improved model classifcation accuracy using Recurrent Neural Networks layered with CNN. </li>
+						</ul>
+					</h6>
+				</div>
+	
+				<button class="accordion">Background modeling for foreground detection in video surveillance</button>
+				<div class="panel"> 
+					<h6>
+						<ul> 
+							<li> Developed a mechanism for automatic background subtraction to identify the moving objects in a video </li>
+							<li> Generated a basis vector of background using Principal Component Analysis and Locality Preserving Projection</li>
+							<li> Subtracted the modelled background from the test video to detect the foreground with 97.7% accuracy.</li>
+						</ul>
+					</h6>
+					</div>
+
+				<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+					
+					for (i = 0; i < acc.length; i++) {
+					  acc[i].addEventListener("click", function() {
+						this.classList.toggle("active");
+						var panel = this.nextElementSibling;
+						if (panel.style.maxHeight) {
+						  panel.style.maxHeight = null;
+						} else {
+						  panel.style.maxHeight = panel.scrollHeight + "px";
+						} 
+					  });
+					}
+					</script>
+<!--
 				<h5>
 					<details>
 						<summary style="color:#555353"><span style="color:black";>Mini Search Engine Implementation <a href="https://github.com/ds-umass/mini-google-group-10" target="_blank">[Github]</a></span></summary>
@@ -120,7 +178,7 @@
 					</h6>
 					</details>
 					<details>
-						<summary style="color:#555353"><span style="color:black";>Background modeling for foreground detection in video surveillance </span></summary>
+						<summary style="color:#555353" list-style-type: square;><span style="color:black";>Background modeling for foreground detection in video surveillance </span></summary>
 					<h6>
 						<ul> 
 							<li> Developed a mechanism for automatic background subtraction to identify the moving objects in a video </li>
@@ -130,11 +188,13 @@
 					</h6>
 					</details>
 				</h5>
+				-->
 				<hr>
 				<h3 class="heading">Skills</h3>
 				
 				<ul>
 					<h5>
+					
 					<li>Languages & Tools: C/C++, Python, Numpy, HTML, PostgreSQL, Tensorflow, Hadoop
 					<li>Certifications: Neural Networks (NTU Singapore), AI-Search Methods (IIT Madras)
 					</h5>
