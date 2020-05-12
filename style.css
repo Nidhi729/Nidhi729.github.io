@@ -104,12 +104,6 @@ h2 {
 	font-size: 2.8em;
 }
 
-h3 {
-	font-size: 2em;
-    /*color: #0375B4;*/
-    color: maroon
-
-}
 
 h5{
 	font-size: 1.5em;
@@ -187,7 +181,7 @@ a:hover {
 
 h3 {
 	font-size: 2em;
-	color:maroon;
+	color:rgb(105, 11, 11);
 }
 
 body {

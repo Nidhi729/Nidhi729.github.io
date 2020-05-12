@@ -14,7 +14,6 @@
 	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
 </head>
 
 <body>
@@ -24,19 +23,19 @@
 		    </div>
 			<div class="col-md-3">
 				<div class="sticky-top" style="top:30px">
-				<center><h1><span style="color:maroon";> nidhi</span><span id="vaidya"> davawala</h1></span>
+				<center><h1><span style="color:rgb(105, 11, 11)";> nidhi</span><span id="vaidya"> davawala</h1></span>
 				<div class="img" id="image">
 						<img src="nidhi.png" alt="Shaan" id="tp" class="img-responsive me" align="center">
 				</div>
 				<br>
-				<a href="mailto:ndavawala@umass.edu" align=center target="_blank"> <i class= "fa fa-envelope-square" style="font-size:24px" title="Mail" alt="Mail"></i> </a>
+				<a href="mailto:ndavawala@umass.edu" align=center target="_blank"> <i class= "fa fa-envelope-square" style="font-size:36px" title="Mail" alt="Mail"></i> </a>
 					&nbsp &nbsp
-				<a href="https://github.com/Nidhi729" align=center target="_blank"> <i class= "fa fa-github" style="font-size:24px" title="Github" alt="Github"></i></a>
+				<a href="https://github.com/Nidhi729" align=center target="_blank"> <i class= "fa fa-github" style="font-size:36px" title="Github" alt="Github"></i></a>
 				    &nbsp &nbsp
-				<a href="https://www.linkedin.com/in/nidhi-davawala/" align=center target="_blank"> <i class= "fa fa-linkedin" style="font-size:24px" title="Linkedin" alt="Linkedin"></i></a>
+				<a href="https://www.linkedin.com/in/nidhi-davawala/" align=center target="_blank"> <i class= "fa fa-linkedin" style="font-size:36px" title="Linkedin" alt="Linkedin"></i></a>
 					&nbsp &nbsp
 				<a href="assets/cv.pdf" align=center target="_blank">
-					<i class= "fa fa-file-text	" style="font-size:24px" title="CV" alt="CV"></i></a>
+					<i class= "fa fa-file-text	" style="font-size:36px" title="CV" alt="CV"></i></a>
 
 			    </center>
 				</div>
@@ -71,12 +70,18 @@
 					</ul>
 
 		</h6>
-		   		<hr>
+				   <hr>
+				
 				<h3 class="heading">Publications</h3>
 				<h5>
-					Change Detection Of Polarimetric SAR Data For Monitoring of Agricultural Areas [<a href="https://doi.org/10.5194/isprs-annals-IV-5-229-2018" target="_blank">Link to paper</a>]<br> <i>N. Varia, N. Davawala, S. Chirakkal, D. Haldar, R.Ghosh, D. Putrevu </i> <br> <a href="https://www.isprs.org/publications/annals.aspx" target="_blank">ISPRS 2018 </a>
+					
+					<button class="accordion"> Change Detection Of Polarimetric SAR Data For Monitoring of Agricultural Areas [<a href="https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-5/229/2018/isprs-annals-IV-5-229-2018.pdf" target="_blank">pdf</a>]</button>
+					<div class="panel">	
+					<h6> <i>N. Varia, N. Davawala, S. Chirakkal, D. Haldar, R.Ghosh, D. Putrevu </i> <br> <a href="https://www.isprs.org/publications/annals.aspx" target="_blank">ISPRS 2018 </a> </h6>
+					</div>
+					
 				</h5>
-				
+
 				<hr>
 
 				<h3 class="heading">Projects</h3>
@@ -126,26 +131,10 @@
 					</h6>
 					</div>
 
-				<script>
-					var acc = document.getElementsByClassName("accordion");
-					var i;
-					
-					for (i = 0; i < acc.length; i++) {
-					  acc[i].addEventListener("click", function() {
-						this.classList.toggle("active");
-						var panel = this.nextElementSibling;
-						if (panel.style.maxHeight) {
-						  panel.style.maxHeight = null;
-						} else {
-						  panel.style.maxHeight = panel.scrollHeight + "px";
-						} 
-					  });
-					}
-					</script>
-<!--
+<!--	
 				<h5>
 					<details>
-						<summary style="color:#555353"><span style="color:black";>Mini Search Engine Implementation <a href="https://github.com/ds-umass/mini-google-group-10" target="_blank">[Github]</a></span></summary>
+						<summary style="color:#555353" content="+"><span style="color:black";>Mini Search Engine Implementation <a href="https://github.com/ds-umass/mini-google-group-10" target="_blank">[Github]</a></span></summary>
 						<h6>
 						<ul>
 							<li>Implemented a mini-search engine capable of handling HTTP query requests to retrieve webpages from keywords. </li>
@@ -191,25 +180,61 @@
 				-->
 				<hr>
 				<h3 class="heading">Skills</h3>
-				
+				<button class="accordion">Languages & Tools</button>
+				<div class="panel">
 				<ul>
-					<h5>
+					<h6>
 					
-					<li>Languages & Tools: C/C++, Python, Numpy, HTML, PostgreSQL, Tensorflow, Hadoop
-					<li>Certifications: Neural Networks (NTU Singapore), AI-Search Methods (IIT Madras)
-					</h5>
+					<li>Programming: C/C++, Python, HTML
+					<li>Machine Learning: Numpy, Sklearn, TensorFlow 
+					<li>Tools: Hadoop, PostgreSQL, LaTeX
+					</h6>
 				</ul>
-				
+				</div>
 
-				
-
-
-
+				<button class="accordion">Certifications</button>
+				<div class="panel">
+				<ul>
+					<h6>
+					
+					<li>Neural Networks (NTU Singapore)
+					<li>AI-Search Methods for Problem Solving(IIT Madras)
+					</h6>
+				</ul>
+				</div>
+				<button class="accordion">Leadership</button>
+				<div class="panel">
+				<ul>
+					<h6>
+					
+					<li>Chairperson,Women in Engineering (WIE) Affinity Group of IEEE Student Branch, DA-IICT (2018)
+					<li>Executive Committee Member of IEEE Industry Applications Society DA-IICT Student Branch Chapter (2016)
+					</h6>
+				</ul>
+				</div>
+				<br>
 			</div>
 			<div class="col-md-1">  
 		    </div>
 		</div>
 	</div>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+		
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+			  panel.style.maxHeight = null;
+			} else {
+			  panel.style.maxHeight = panel.scrollHeight + "px";
+			} 
+		  });
+		}
+		</script>
 	<!-- Start of SimpleHitCounter Code -->
 <!-- Start of SimpleHitCounter Code -->
 <!-- <div align="center"><a href="http://www.simplehitcounter.com" target="_blank"><img src="http://simplehitcounter.com/hit.php?uid=0&f=16777215&b=0" border="0" height="18" width="83" alt="web counter"></a><br><a href="http://www.simplehitcounter.com" target="_blank" style="text-decoration:none;">web counter</a></div> -->
